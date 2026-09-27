@@ -1,10 +1,16 @@
-# RAYEN GYM — Salle de Sport
+<p align="center">
+  <img src="images/Untitled-3.png" alt="RAYEN GYM Logo" width="200">
+</p>
 
-A modern, responsive website for **RAYEN GYM**, a fitness center located in Sfax, Tunisia.
+<h1 align="center">RAYEN GYM — Fitness Center</h1>
+
+<p align="center">A modern, responsive website for <strong>RAYEN GYM</strong>, a fitness center located in Sfax, Tunisia.</p>
+
+---
 
 ## Overview
 
-RAYEN GYM's official website built as a single-page-style multi-document site. It presents the gym's activities, coaches, pricing plans, and schedule, and includes sign-up and login pages.
+RAYEN GYM's official website built as a multi-page static site. It presents the gym's activities, coaches, pricing plans, and weekly schedule, and includes sign-up and login pages.
 
 ## Tech Stack
 
@@ -29,12 +35,12 @@ RAYEN GYM's official website built as a single-page-style multi-document site. I
 
 | Page | File | Description |
 |------|------|-------------|
-| Accueil | `index.html` | Home — hero, stats, schedule, coaches |
-| À propos | `about.html` | About the gym and its founder |
-| Activités | `activité.html` | Six activity cards with links |
-| Tarifs | `tarifs.html` | Pricing plans + price calculator |
-| Inscription | `inscription.html` | Sign-up form |
-| Connexion | `connexion.html` | Login form |
+| Home | `index.html` | Hero, stats, schedule, coaches |
+| About | `about.html` | About the gym and its founder |
+| Activities | `activité.html` | Six activity cards with links |
+| Pricing | `tarifs.html` | Pricing plans + price calculator |
+| Sign Up | `inscription.html` | Registration form |
+| Login | `connexion.html` | Login form |
 
 ## Getting Started
 
@@ -92,4 +98,4 @@ RAYEN-GYM/
 
 ---
 
-© 2025 RAYEN GYM — Tous droits réservés.
+© 2025 RAYEN GYM — All rights reserved.
