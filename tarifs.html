@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifs — RAYEN GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html">
+      <img src="images/Untitled-3.png" alt="RAYEN GYM">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="activité.html">Activités</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="connexion.html" class="btn btn--ghost btn--sm">Connexion</a>
+      <a href="inscription.html" class="btn btn--primary btn--sm">Inscription</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============ PRICING PLANS ============ -->
+  <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">Nos tarifs</span>
+        <h1 class="section-title">Des formules pour chaque objectif</h1>
+        <p class="section-sub">Choisis l'abonnement qui correspond à ton rythme et à ton budget.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="plan">Mensuel</div>
+          <div class="amount">60<small> dt/mois</small></div>
+          <ul>
+            <li>Accès illimité à la salle</li>
+            <li>Toutes les activités en accès libre</li>
+            <li>Vestiaire &amp; casiers</li>
+          </ul>
+          <a href="inscription.html" class="btn btn--ghost">Choisir</a>
+        </div>
+
+        <div class="price-card featured reveal">
+          <div class="plan">Trimestriel · Populaire</div>
+          <div class="amount">150<small> dt/3 mois</small></div>
+          <ul>
+            <li>Tous les avantages Mensuel</li>
+            <li><strong>-20% sur le prix mensuel</strong></li>
+            <li>1 séance découverte offerte</li>
+            <li>Programme personnalisé inclus</li>
+          </ul>
+          <a href="inscription.html" class="btn btn--primary">Choisir</a>
+        </div>
+
+        <div class="price-card reveal">
+          <div class="plan">Annuel · Meilleur prix</div>
+          <div class="amount">450<small> dt/an</small></div>
+          <ul>
+            <li>Tous les avantages Trimestriel</li>
+            <li><strong>2 mois offerts</strong></li>
+            <li>Accès VIP aux nouveaux équipements</li>
+            <li>1 coaching individuel par mois</li>
+          </ul>
+          <a href="inscription.html" class="btn btn--ghost">Choisir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICE CALCULATOR ============ -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">Estimateur</span>
+        <h2 class="section-title">Calcule ton prix</h2>
+        <p class="section-sub">Personnalise ta formule et obtiens une estimation instantanée.</p>
+      </div>
+
+      <div class="calc reveal">
+        <h3>Compose ton abonnement</h3>
+
+        <div class="field">
+          <label>Activités (20 dt par activité)</label>
+          <div class="check-grid">
+            <label class="check"><input type="checkbox" id="musculation" value="20"> Musculation</label>
+            <label class="check"><input type="checkbox" id="cardio" value="20"> Cardio</label>
+            <label class="check"><input type="checkbox" id="kickboxing" value="20"> Kick Boxing</label>
+            <label class="check"><input type="checkbox" id="boxe" value="20"> Boxe</label>
+            <label class="check"><input type="checkbox" id="yoga" value="20"> Yoga</label>
+            <label class="check"><input type="checkbox" id="zumba" value="20"> Zumba</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="duree">Durée de l'abonnement</label>
+          <select id="duree">
+            <option value="60">Mensuel — 60 dt</option>
+            <option value="150">Trimestriel — 150 dt</option>
+            <option value="450">Annuel — 450 dt</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Coach personnel</label>
+          <div class="radio-row">
+            <label class="check"><input type="radio" name="coach" value="0" checked> Sans coach</label>
+            <label class="check"><input type="radio" name="coach" value="20"> Avec coach (+20 dt)</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="check" style="font-size: 1rem; padding: 14px 16px; border-color: rgba(0, 68, 255, 0.4);">
+            <input type="checkbox" id="etudiant"> Je suis étudiant (-20%)
+          </label>
+        </div>
+
+        <button class="btn btn--primary" style="width: 100%; justify-content: center;" onclick="calculerPrix()">Calculer le prix</button>
+
+        <div class="calc-result" id="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/Untitled-3.png" alt="RAYEN GYM">
+          <p>RAYEN GYM — ta salle de sport à Sfax.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="activité.html">Activités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:rayenbenaissa213@gmail.com">rayenbenaissa213@gmail.com</a></li>
+            <li><a href="tel:+21624055994">+216 24 055 994</a></li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.facebook.com/rayen.benaissa.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="images/faceb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/rayen_ben_aissa_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/insta.jpg" alt="Instagram"></a>
+            <a href="https://x.com/?lang=fr" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="images/twitter.jpg" alt="X"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 RAYEN GYM — Tous droits réservés.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    function calculerPrix() {
+      let prixTotal = parseInt(document.getElementById("duree").value);
+
+      let coach = document.getElementsByName("coach");
+      for (let i = 0; i < coach.length; i++) {
+        if (coach[i].checked) prixTotal += parseInt(coach[i].value);
+      }
+
+      let activites = ["musculation", "cardio", "kickboxing", "boxe", "yoga", "zumba"];
+      for (let i = 0; i < activites.length; i++) {
+        if (document.getElementById(activites[i]).checked) prixTotal += 20;
+      }
+
+      if (document.getElementById("etudiant").checked) {
+        prixTotal *= 0.8;
+      }
+
+      const result = document.getElementById("result");
+      result.style.display = "block";
+      result.textContent = "Prix total : " + prixTotal.toFixed(2) + " dt";
+    }
+  </script>
+
+</body>
+</html>

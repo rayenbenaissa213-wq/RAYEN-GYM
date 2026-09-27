@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activités — RAYEN GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html">
+      <img src="images/Untitled-3.png" alt="RAYEN GYM">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="activité.html">Activités</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="connexion.html" class="btn btn--ghost btn--sm">Connexion</a>
+      <a href="inscription.html" class="btn btn--primary btn--sm">Inscription</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">Nos disciplines</span>
+        <h1 class="section-title">Choisis ton activité</h1>
+        <p class="section-sub">Du fitness intense au yoga apaisant, trouve le cours qui te correspond.</p>
+      </div>
+
+      <div class="activities">
+        <a class="activity-card reveal" href="https://www.musculaction.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/musculation.jpg" alt="Musculation">
+          <div class="info">
+            <h3>Musculation</h3>
+            <p>Renforcement musculaire et prise de masse avec un accompagnement sur mesure.</p>
+          </div>
+        </a>
+
+        <a class="activity-card reveal" href="https://cardiopleinair.ca/" target="_blank" rel="noopener noreferrer">
+          <img src="images/cardio.jpg" alt="Cardio">
+          <div class="info">
+            <h3>Cardio</h3>
+            <p>Améliore ton endurance et brûle des calories avec nos appareils dernière génération.</p>
+          </div>
+        </a>
+
+        <a class="activity-card reveal" href="https://glorykickboxing.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/kickboxing.jpg" alt="Kick Boxing">
+          <div class="info">
+            <h3>Kick Boxing</h3>
+            <p>Défoule-toi et apprends les techniques de combat avec nos coachs spécialisés.</p>
+          </div>
+        </a>
+
+        <a class="activity-card reveal" href="https://integralyoga.org/fr/" target="_blank" rel="noopener noreferrer">
+          <img src="images/yoga.jpg" alt="Yoga">
+          <div class="info">
+            <h3>Yoga</h3>
+            <p>Équilibre, flexibilité et sérénité — des séances adaptées à tous les niveaux.</p>
+          </div>
+        </a>
+
+        <a class="activity-card reveal" href="https://www.wbaboxing.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/boxe.jpg" alt="Boxe">
+          <div class="info">
+            <h3>Boxe</h3>
+            <p>Travaille ta technique, ta vitesse et ta puissance encadré par des professionnels.</p>
+          </div>
+        </a>
+
+        <a class="activity-card reveal" href="https://www.zumba.com/en-US" target="_blank" rel="noopener noreferrer">
+          <img src="images/Zumba.jpg" alt="Zumba">
+          <div class="info">
+            <h3>Zumba</h3>
+            <p>Des chorégraphies fun et énergiques pour te défouler en dansant.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/Untitled-3.png" alt="RAYEN GYM">
+          <p>RAYEN GYM — ta salle de sport à Sfax.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="activité.html">Activités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:rayenbenaissa213@gmail.com">rayenbenaissa213@gmail.com</a></li>
+            <li><a href="tel:+21624055994">+216 24 055 994</a></li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.facebook.com/rayen.benaissa.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="images/faceb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/rayen_ben_aissa_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/insta.jpg" alt="Instagram"></a>
+            <a href="https://x.com/?lang=fr" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="images/twitter.jpg" alt="X"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 RAYEN GYM — Tous droits réservés.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

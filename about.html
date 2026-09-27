@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — RAYEN GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html">
+      <img src="images/Untitled-3.png" alt="RAYEN GYM">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="activité.html">Activités</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="connexion.html" class="btn btn--ghost btn--sm">Connexion</a>
+      <a href="inscription.html" class="btn btn--primary btn--sm">Inscription</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container about-grid">
+      <div class="reveal">
+        <img class="rayen" src="images/rayen.jpg" alt="">
+      </div>
+      <div class="reveal">
+        <h1 class="ktiba5">À <br>PROPOS</h1>
+        <h3 class="ktiba6"> Rayen Ben Aissa (créateur)</h3>
+        <p class="ktiba7">Étudiant en deuxième année en Business Intelligence à l'ISGIS. <br>
+        (Institut Supérieur d'Informatique et des Technologies Industrielles de Sfax)<br>
+        Je suis également graphiste, passionné. <br>
+        par la créativité et la technologie. <br>
+        Je possède de solides compétences en Python, <br>
+        JavaScript, HTML, CSS et C, ce qui me permet <br>
+        de donner vie à des idées à travers <br>
+        le design et le code.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container map-wrap reveal">
+      <img class="map" src="images/map.png" alt="" usemap="#image-map">
+      <map name="image-map">
+        <area target="_self" alt="isgis" title="isgis" href="https://isgis.rnu.tn/fr" coords="82,517,124" shape="circle">
+        <area target="_self" alt="enetcom" title="enetcom" href="https://enetcom.rnu.tn/fr" coords="387,434,117" shape="circle">
+        <area target="_self" alt="isims" title="isims" href="https://isimsf.rnu.tn/" coords="540,260,109" shape="circle">
+        <area target="_self" alt="isb" title="isb" href="https://isb.tn/" coords="186,74,107" shape="circle">
+      </map>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/Untitled-3.png" alt="RAYEN GYM">
+          <p>RAYEN GYM — ta salle de sport à Sfax.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="activité.html">Activités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:rayenbenaissa213@gmail.com">rayenbenaissa213@gmail.com</a></li>
+            <li><a href="tel:+21624055994">+216 24 055 994</a></li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.facebook.com/rayen.benaissa.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="images/faceb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/rayen_ben_aissa_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/insta.jpg" alt="Instagram"></a>
+            <a href="https://x.com/?lang=fr" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="images/twitter.jpg" alt="X"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 RAYEN GYM — Tous droits réservés.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

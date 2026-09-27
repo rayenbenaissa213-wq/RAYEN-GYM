@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAYEN GYM — Salle de Sport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <a class="logo" href="index.html">
+      <img src="images/Untitled-3.png" alt="RAYEN GYM">
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="activité.html">Activités</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="connexion.html" class="btn btn--ghost btn--sm">Connexion</a>
+      <a href="inscription.html" class="btn btn--primary btn--sm">Inscription</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <video class="video-background" autoplay muted playsinline loop>
+      <source src="images/vedio1.mp4" type="video/mp4">
+    </video>
+    <div class="container hero-inner">
+      <span class="eyebrow">RAYEN GYM · Sfax</span>
+      <h1>Transforme ton corps.<br><span>Booste ton énergie.</span><br>Dépasse tes limites.</h1>
+      <p>Rejoins une communauté motivée, des coachs certifiés et du matériel de dernière génération.</p>
+      <div class="hero-cta">
+        <a href="inscription.html" class="btn btn--primary">Commencer maintenant</a>
+        <a href="activité.html" class="btn btn--ghost">Découvrir les activités</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="stats">
+        <div class="stat reveal"><div class="num">6+</div><div class="label">Activités</div></div>
+        <div class="stat reveal"><div class="num">4</div><div class="label">Coachs certifiés</div></div>
+        <div class="stat reveal"><div class="num">7j/7</div><div class="label">Ouvert toute la semaine</div></div>
+        <div class="stat reveal"><div class="num">24h</div><div class="label">Suivi personnalisé</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">Emploi du temps</span>
+        <h2 class="section-title">Nos activités de la semaine</h2>
+        <p class="section-sub">Un programme pensé pour tous les niveaux, du débutant au confirmé.</p>
+      </div>
+
+      <div class="schedule-wrap reveal">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th>Jour</th>
+              <th>08h – 12h</th>
+              <th>14h – 15h</th>
+              <th>17h – 18h30</th>
+              <th>19h – 20h</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Lundi</td><td><span class="badge">Musculation</span></td><td><span class="badge">Yoga</span></td><td><span class="badge">Kick Boxing</span></td><td><span class="badge">Zumba</span></td></tr>
+            <tr><td>Mardi</td><td><span class="badge">Cardio</span></td><td><span class="badge">Yoga</span></td><td><span class="badge">Boxe</span></td><td><span class="badge">Zumba</span></td></tr>
+            <tr><td>Mercredi</td><td><span class="badge">Musculation</span></td><td><span class="badge">Yoga</span></td><td><span class="badge">Kick Boxing</span></td><td><span class="badge">Boxe</span></td></tr>
+            <tr><td>Jeudi</td><td><span class="badge">Cardio</span></td><td><span class="badge">Yoga</span></td><td><span class="badge">Boxe</span></td><td><span class="badge">Zumba</span></td></tr>
+            <tr><td>Vendredi</td><td><span class="badge">Musculation</span></td><td><span class="badge">Yoga</span></td><td><span class="badge">Kick Boxing</span></td><td><span class="badge">Zumba</span></td></tr>
+            <tr><td>Samedi</td><td><span class="badge">Musculation / Cardio</span></td><td>—</td><td><span class="badge">Boxe</span></td><td><span class="badge">Zumba</span></td></tr>
+            <tr><td>Dimanche</td><td colspan="4" style="text-align:center;"><span class="badge badge--free">Accès libre (09h – 13h)</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COACHES ============ -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">Notre équipe</span>
+        <h2 class="section-title">Les coachs de RAYEN GYM</h2>
+        <p class="section-sub">Des professionnels passionnés pour t'accompagner vers tes objectifs.</p>
+      </div>
+
+      <div class="coaches">
+        <div class="coach-card reveal">
+          <img src="images/karim.jpg" alt="Coach Karim">
+          <div class="coach-body">
+            <span class="role">Force &amp; Condition</span>
+            <h3>Coach Karim</h3>
+            <p>Prise de masse, perte de poids, programmes personnalisés. Encadre musculation &amp; cardio.</p>
+          </div>
+        </div>
+
+        <div class="coach-card reveal">
+          <img src="images/ines.jpg" alt="Coach Inès">
+          <div class="coach-body">
+            <span class="role">Yoga &amp; Bien-être</span>
+            <h3>Coach Inès</h3>
+            <p>Yoga débutant, stretching, respiration. Encadre les séances de Yoga.</p>
+          </div>
+        </div>
+
+        <div class="coach-card reveal">
+          <img src="images/mehdi.jpg" alt="Coach Mehdi">
+          <div class="coach-body">
+            <span class="role">Sports de combat</span>
+            <h3>Coach Mehdi</h3>
+            <p>Techniques de combat, cardio-combat, self-défense. Encadre Kick boxing &amp; Boxe.</p>
+          </div>
+        </div>
+
+        <div class="coach-card reveal">
+          <img src="images/sara.jpg" alt="Coach Sara">
+          <div class="coach-body">
+            <span class="role">Fitness &amp; Danse</span>
+            <h3>Coach Sara</h3>
+            <p>Zumba, chorégraphies fitness, entraînement cardio. Encadre les séances de Zumba.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/Untitled-3.png" alt="RAYEN GYM">
+          <p>RAYEN GYM — ta salle de sport à Sfax. Transforme ton corps, booste ton énergie.</p>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="activité.html">Activités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:rayenbenaissa213@gmail.com">rayenbenaissa213@gmail.com</a></li>
+            <li><a href="tel:+21624055994">+216 24 055 994</a></li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.facebook.com/rayen.benaissa.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="images/faceb.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/rayen_ben_aissa_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="images/insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://x.com/?lang=fr" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src="images/twitter.jpg" alt="X">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 RAYEN GYM — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
